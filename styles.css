@@ -1,0 +1,284 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181842;
+    color: white;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #9aacff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #16519d;
+    padding: 15px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu a:hover {
+    color: #9aacff;
+    padding-left: 10px;
+}
+
+/* Sección de servicios */
+.servicio {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    color: #181842;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.servicio h2 {
+    font-size: 2rem;
+    color: #9aacff;
+}
+
+.servicio p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.service-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Estilo para los íconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-logo {
+    width: 24px;
+    height: 24px;
+}
+
+/* Sección de contacto */
+.contacto {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    color: #9aacff;
+}
+
+.contacto .social-icons {
+    margin-top: 20px;
+}
+
+/* Estilo para la ubicación en Google Maps */
+.visitanos {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.visitanos h2 {
+    font-size: 2rem;
+    color: #9aacff;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #181842;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Estilos Responsivos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustes para el encabezado */
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    /* Ajuste en el menú de navegación */
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Ajustes en las secciones de servicios */
+    .servicio h2 {
+        font-size: 1.5rem;
+    }
+
+    .servicio p {
+        font-size: 1rem;
+    }
+
+    .service-image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* Ajustes en los íconos sociales */
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ajustes para el mapa */
+    .map-container iframe {
+        height: 250px;
+    }
+
+    /* Ajustes en el pie de página */
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para pantallas más pequeñas */
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .service-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
