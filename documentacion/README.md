@@ -10,6 +10,7 @@ Documentación del procedimiento **TI-PRO-003**.
 | `TI-PRO-003-Pasos-a-seguir.md` | Resumen de pasos en Markdown. |
 | `TI-PRO-003-Diagrama.drawio` | Diagrama de flujo para Draw.io / diagrams.net. |
 | `vista-previa.html` | Vista para revisar el proceso en el navegador. |
+| `proceso_adquisicion_ti_compras.zip` | Paquete único para descargar todos los archivos. |
 
 ## Cómo abrir el diagrama
 
