@@ -6,7 +6,7 @@ Documentación del procedimiento **TI-PRO-003**.
 
 | Archivo | Uso |
 | --- | --- |
-| `TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx` | Procedimiento completo (pasos, responsabilidades, flujos interno y externo). |
+| `TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx` | Procedimiento completo, en el mismo formato de la plantilla institucional (encabezado, pie, Calibri justificado y secciones numeradas). |
 | `TI-PRO-003-Pasos-a-seguir.md` | Resumen de pasos en Markdown. |
 | `TI-PRO-003-Diagrama.drawio` | Diagrama de flujo para Draw.io / diagrams.net. |
 | `vista-previa.html` | Vista para revisar el proceso en el navegador. |

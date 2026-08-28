@@ -578,7 +578,9 @@ Establecer el procedimiento para adquirir equipos tecnológicos de forma planifi
 
 
 if __name__ == "__main__":
-    p1 = build_docx()
+    from aplicar_formato_plantilla import build as build_docx_plantilla
+
+    p1 = build_docx_plantilla()
     p2 = build_drawio()
     p3 = build_markdown()
     print(p1)
