@@ -28,9 +28,18 @@ Documentos internos del Área de TI, en plantilla institucional (encabezado, pie
 3. Seleccione el archivo `.drawio` correspondiente.
 4. Para exportar: **File → Export as → PNG** o **PDF**.
 
+## Presentación — Gemini para el analista de sistemas (15 min)
+
+| Archivo | Uso |
+| --- | --- |
+| `Gemini-IA-para-el-Analista-de-Sistemas.pptx` | Diapositivas (11 slides, widescreen). Las notas del orador van en cada diapositiva. |
+| `Guion-Gemini-15-minutos.md` | Tiempos sugeridos y respuestas a preguntas frecuentes. |
+| `presentacion_gemini_analista.zip` | Paquete de descarga. |
+
 ## Regenerar
 
 ```bash
 python3 documentacion/generar_documentos.py
 python3 documentacion/generar_mantenimiento.py
+python3 documentacion/generar_presentacion_gemini.py
 ```
