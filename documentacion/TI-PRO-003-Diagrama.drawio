@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Cursor" version="22.1.0" type="device">
+  <diagram id="ti-pro-003" name="Adquisición TI y Compras">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="2300" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="t1" value="PROCESO DE ADQUISICIÓN DE TECNOLOGÍA ENTRE TI Y COMPRAS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontStyle=1;fontSize=16;strokeColor=#1F4E79;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2" value="TI-PRO-003  ·  v1.1  ·  Clientes internos (admin. Quito y GYE) y externos (guardias / supervisores — tablets y laptops)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D6EAF8;fontColor=#1F4E79;fontSize=12;strokeColor=#5DADE2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="1520" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg" value="Leyenda de responsables:  Azul = Cliente interno    Verde = Cliente externo    Lila = TI    Amarillo = Gerencia    Rojo = Compras    Rombo = decisión" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#85929E;fontSize=10;align=left;spacingLeft=10;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="116" width="1520" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="INICIO&#xa;Necesidad o falla&#xa;de un equipo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1ABC9C;fontColor=#FFFFFF;strokeColor=#0E6655;fontStyle=1;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="170" width="200" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="tipo" value="¿Quién solicita?&#xa;¿Cliente interno o&#xa;cliente externo?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="290" width="260" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="laneI" value="FLUJO A — CLIENTE INTERNO&#xa;Personal administrativo · Quito y Guayaquil" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E79;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#1F4E79;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="720" height="720" as="geometry"/>
+        </mxCell>
+        <mxCell id="laneE" value="FLUJO B — CLIENTE EXTERNO&#xa;Guardias, supervisores y clientes por fuera · Tablets / laptops" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F5;strokeColor=#117A65;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#0E6655;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="840" y="460" width="720" height="720" as="geometry"/>
+        </mxCell>
+        <mxCell id="i1" value="1. Genera TICKET&#xa;de necesidad o falla" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#1F4E79;fontColor=#1B4F72;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="530" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="i2" value="2. TI evalúa el caso&#xa;(inventario, compatibilidad, arreglo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#6C3483;fontColor=#4A235A;fontStyle=0;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="630" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="i3" value="¿El equipo tiene arreglo&#xa;o hay inventario?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="90" y="730" width="260" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="i4" value="TI repara o reasigna.&#xa;No se compra." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ABEBC6;strokeColor=#1D8348;fontColor=#145A32;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="750" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="i5" value="3. TI elabora informe técnico&#xa;y SOLICITA la compra a Compras" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#6C3483;fontColor=#4A235A;fontStyle=0;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="i6" value="Entrega al usuario y cierra ticket&#xa;(sin compra)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ABEBC6;strokeColor=#1D8348;fontColor=#145A32;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="860" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="inote" value="Siempre que el equipo tenga arreglo, no se compra. TI pide la compra solo si no hay solución técnica ni stock." style="shape=note;whiteSpace=wrap;html=1;size=18;fillColor=#FCF3CF;strokeColor=#B7950B;fontSize=10;align=left;spacingLeft=8;fontColor=#7D6608;" vertex="1" parent="1">
+          <mxGeometry x="80" y="990" width="640" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="i7" value="Continúa a aprobación&#xa;de Gerencia →" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAD7A0;strokeColor=#B9770E;fontColor=#6E2C00;fontStyle=1;fontSize=12;strokeWidth=2;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1080" width="280" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="1. Reporta con TICKET&#xa;Ej.: Tito — no le funciona el dispositivo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#0E6655;fontColor=#0E6655;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="530" width="340" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="2. TI evalúa y emite&#xa;INFORME TÉCNICO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#6C3483;fontColor=#4A235A;fontStyle=0;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="630" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="¿El equipo tiene arreglo&#xa;o hay inventario?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="890" y="730" width="260" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="TI repara o reasigna.&#xa;No se compra." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ABEBC6;strokeColor=#1D8348;fontColor=#145A32;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="750" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="3. El cliente SOLICITA DIRECTAMENTE&#xa;a Compras por CORREO, con el&#xa;informe técnico de TI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#0E6655;fontColor=#0E6655;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="870" width="340" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="Entrega al usuario y cierra ticket&#xa;(sin compra)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ABEBC6;strokeColor=#1D8348;fontColor=#145A32;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="860" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="enote" value="Si se daña un equipo de campo (guardia/supervisor), la compra va por este flujo. El usuario no espera a que TI haga el pedido." style="shape=note;whiteSpace=wrap;html=1;size=18;fillColor=#FCF3CF;strokeColor=#B7950B;fontSize=10;align=left;spacingLeft=8;fontColor=#7D6608;" vertex="1" parent="1">
+          <mxGeometry x="880" y="990" width="640" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="Continúa a aprobación&#xa;de Gerencia →" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAD7A0;strokeColor=#B9770E;fontColor=#6E2C00;fontStyle=1;fontSize=12;strokeWidth=2;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1080" width="280" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="g1" value="4. GERENCIA revisa para aprobación&#xa;(aplica en los DOS casos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontSize=11;strokeWidth=2;fontStyle=1;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1220" width="480" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="g2" value="¿Gerencia aprueba&#xa;la compra?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1320" width="260" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="gno" value="Se notifica el rechazo.&#xa;Se reformula o se cierra&#xa;el requerimiento." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5B7B1;strokeColor=#922B21;fontColor=#641E16;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1335" width="280" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1" value="5. COMPRAS procede con cotización&#xa;y emite la ORDEN DE COMPRA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5B7B1;strokeColor=#922B21;fontColor=#641E16;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1470" width="480" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent" value="6. ¿Cómo se entrega el equipo&#xa;recibido del proveedor?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F9E79F;strokeColor=#B7950B;fontColor=#7D6608;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1570" width="280" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="dI1" value="Cliente interno:&#xa;Compras ENTREGA el equipo a TI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5B7B1;strokeColor=#922B21;fontColor=#641E16;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1740" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dI2" value="7. TI PREPARA el equipo&#xa;(SO, AD, correo, M365, antivirus,&#xa;políticas, inventario, etiqueta)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#6C3483;fontColor=#4A235A;fontStyle=0;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1840" width="320" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="dI3" value="8. TI entrega al usuario&#xa;con Acta de entrega" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#1F4E79;fontColor=#1B4F72;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1960" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dE1" value="Cliente externo:&#xa;Compras entrega DIRECTAMENTE al usuario&#xa;o ENVÍA CORREO de coordinación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5B7B1;strokeColor=#922B21;fontColor=#641E16;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1740" width="380" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="dE2" value="7. TI PREPARA el equipo&#xa;para dejarlo listo de uso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#6C3483;fontColor=#4A235A;fontStyle=0;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1850" width="320" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="dE3" value="8. Se habilita / entrega al usuario&#xa;con Acta de entrega" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#0E6655;fontColor=#0E6655;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1960" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="fin1" value="9. CIERRE&#xa;Inventario · licencias · ticket" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ABEBC6;strokeColor=#1D8348;fontColor=#145A32;fontSize=11;strokeWidth=2;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="2080" width="320" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="end" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#922B21;fontColor=#FFFFFF;strokeColor=#641E16;fontStyle=1;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="2180" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="start" target="tipo">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="Interno" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1F4E79;endArrow=block;endFill=1;fontColor=#1F4E79;fontStyle=1;" edge="1" parent="1" source="tipo" target="i1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="Externo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0E6655;endArrow=block;endFill=1;fontColor=#0E6655;fontStyle=1;" edge="1" parent="1" source="tipo" target="e1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="i1" target="i2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="i2" target="i3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a6" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1D8348;endArrow=block;endFill=1;fontColor=#1D8348;fontStyle=1;fontSize=11;" edge="1" parent="1" source="i3" target="i4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a7" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#922B21;endArrow=block;endFill=1;fontColor=#922B21;fontStyle=1;fontSize=11;" edge="1" parent="1" source="i3" target="i5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="i4" target="i6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="i5" target="i7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1D8348;endArrow=block;endFill=1;fontColor=#1D8348;fontStyle=1;fontSize=11;" edge="1" parent="1" source="i6" target="fin1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="e1" target="e2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="e2" target="e3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1D8348;endArrow=block;endFill=1;fontColor=#1D8348;fontStyle=1;fontSize=11;" edge="1" parent="1" source="e3" target="e4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#922B21;endArrow=block;endFill=1;fontColor=#922B21;fontStyle=1;fontSize=11;" edge="1" parent="1" source="e3" target="e5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="e4" target="e6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="e5" target="e7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1D8348;endArrow=block;endFill=1;fontColor=#1D8348;fontStyle=1;fontSize=11;" edge="1" parent="1" source="e6" target="fin1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="i7" target="g1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="e7" target="g1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="g1" target="g2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#922B21;endArrow=block;endFill=1;fontColor=#922B21;fontStyle=1;fontSize=11;" edge="1" parent="1" source="g2" target="gno">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c6" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1D8348;endArrow=block;endFill=1;fontColor=#1D8348;fontStyle=1;fontSize=11;" edge="1" parent="1" source="g2" target="c1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#922B21;endArrow=block;endFill=1;fontColor=#922B21;fontStyle=1;fontSize=11;" edge="1" parent="1" source="gno" target="end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="c1" target="ent">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d1" value="Interno" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1F4E79;endArrow=block;endFill=1;fontColor=#1F4E79;fontStyle=1;" edge="1" parent="1" source="ent" target="dI1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2" value="Externo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0E6655;endArrow=block;endFill=1;fontColor=#0E6655;fontStyle=1;" edge="1" parent="1" source="ent" target="dE1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dI1" target="dI2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dI2" target="dI3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dI3" target="fin1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dE1" target="dE2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dE2" target="dE3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="dE3" target="fin1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#34495E;endArrow=block;endFill=1;" edge="1" parent="1" source="fin1" target="end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

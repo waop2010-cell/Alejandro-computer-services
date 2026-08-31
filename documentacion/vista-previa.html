@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TI-PRO-003 — Adquisición de tecnología entre TI y Compras</title>
+  <style>
+    :root {
+      --navy: #1f4e79;
+      --blue: #2e86ab;
+      --green: #0e6655;
+      --gold: #b7950b;
+      --red: #922b21;
+      --purple: #6c3483;
+      --bg: #f4f7fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Calibri, Arial, sans-serif;
+      background: var(--bg);
+      color: #1c2833;
+      line-height: 1.45;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 28px 32px;
+    }
+    header p { margin: 6px 0 0; opacity: 0.9; }
+    main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h2 { color: var(--navy); border-bottom: 2px solid #d6eaf8; padding-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card {
+      border-radius: 12px;
+      padding: 16px 18px;
+      border: 2px solid;
+      background: #fff;
+    }
+    .interno { border-color: var(--navy); background: #eaf2f8; }
+    .externo { border-color: var(--green); background: #e8f8f5; }
+    ol.pasos { padding-left: 20px; }
+    ol.pasos li { margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { border: 1px solid #bfd6ea; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--navy); color: #fff; }
+    .note {
+      background: #fcf3cf;
+      border-left: 4px solid var(--gold);
+      padding: 12px 14px;
+      margin: 16px 0;
+    }
+    .legend span { display: inline-block; padding: 4px 10px; border-radius: 999px; margin: 4px 6px 4px 0; font-size: 13px; }
+    footer { text-align: center; color: #5d6d7e; padding: 24px; font-size: 13px; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proceso de adquisición de tecnología entre TI y Compras</h1>
+    <p>Código TI-PRO-003 · Versión 1.1 · Diagrama: TI-PRO-003-Diagrama.drawio</p>
+  </header>
+  <main>
+    <p class="legend">
+      <span style="background:#aed6f1">Cliente interno</span>
+      <span style="background:#a3e4d7">Cliente externo</span>
+      <span style="background:#d7bde2">TI</span>
+      <span style="background:#f9e79f">Gerencia</span>
+      <span style="background:#f5b7b1">Compras</span>
+    </p>
+
+    <div class="note">
+      <strong>Regla de daño:</strong> si se daña un dispositivo de guardia, supervisor u otro cliente externo, la compra sigue el flujo externo. El usuario solicita directamente a Compras por correo, con el informe técnico de TI.
+    </div>
+
+    <h2>Definición de clientes</h2>
+    <table>
+      <thead>
+        <tr><th>Tipo</th><th>Quiénes son</th><th>Dónde</th><th>Equipos</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cliente interno</td>
+          <td>Personal administrativo</td>
+          <td>Quito y Guayaquil</td>
+          <td>Laptops, PCs, monitores, accesorios</td>
+        </tr>
+        <tr>
+          <td>Cliente externo</td>
+          <td>Clientes por fuera: guardias y supervisores</td>
+          <td>Operación / campo</td>
+          <td>Tablets y laptops</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Los dos flujos</h2>
+    <div class="grid">
+      <article class="card interno">
+        <h3>A. Cliente interno</h3>
+        <ol class="pasos">
+          <li>Ticket de necesidad o falla.</li>
+          <li>TI evalúa. Si tiene arreglo o hay stock, repara o reasigna. No se compra.</li>
+          <li>Si no tiene arreglo, TI elabora el informe y <strong>solicita la compra</strong>.</li>
+          <li>Gerencia aprueba.</li>
+          <li>Compras emite la orden y <strong>entrega el equipo a TI</strong>.</li>
+          <li>TI prepara el equipo y lo entrega al usuario con acta.</li>
+        </ol>
+      </article>
+      <article class="card externo">
+        <h3>B. Cliente externo</h3>
+        <ol class="pasos">
+          <li>Ticket (ejemplo: Tito indica que no le funciona el dispositivo).</li>
+          <li>TI evalúa y emite informe técnico.</li>
+          <li>El cliente <strong>solicita directamente</strong> a Compras por correo, con el informe de TI.</li>
+          <li>Gerencia aprueba (igual que en el flujo interno).</li>
+          <li>Compras entrega <strong>al usuario</strong> o envía correo.</li>
+          <li>TI prepara el equipo y se habilita / entrega al usuario.</li>
+        </ol>
+      </article>
+    </div>
+
+    <h2>Pasos comunes después de la solicitud</h2>
+    <ol class="pasos">
+      <li>Gerencia revisa para la aprobación en ambos casos.</li>
+      <li>Compras cotiza y emite la orden de compra.</li>
+      <li>TI configura el equipo (sistema operativo, correo, seguridad, inventario).</li>
+      <li>El usuario firma el acta de entrega y TI cierra el ticket.</li>
+    </ol>
+  </main>
+  <footer>Documento interno · Área de Tecnología de la Información</footer>
+</body>
+</html>
