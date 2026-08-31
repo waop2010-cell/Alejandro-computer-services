@@ -1,28 +1,36 @@
-# Proceso de adquisición de tecnología entre TI y Compras
+# Procedimientos de Tecnología de la Información
 
-Documentación del procedimiento **TI-PRO-003**.
+Documentos internos del Área de TI, en plantilla institucional (encabezado, pie, Calibri justificado).
 
-## Archivos
+## TI-PRO-003 — Adquisición de tecnología entre TI y Compras
 
 | Archivo | Uso |
 | --- | --- |
-| `TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx` | Procedimiento completo, en el mismo formato de la plantilla institucional (encabezado, pie, Calibri justificado y secciones numeradas). |
-| `TI-PRO-003-Pasos-a-seguir.md` | Resumen de pasos en Markdown. |
-| `TI-PRO-003-Diagrama.drawio` | Diagrama de flujo para Draw.io / diagrams.net. |
-| `vista-previa.html` | Vista para revisar el proceso en el navegador. |
-| `proceso_adquisicion_ti_compras.zip` | Paquete único para descargar todos los archivos. |
+| `TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx` | Procedimiento completo. |
+| `TI-PRO-003-Pasos-a-seguir.md` | Resumen de pasos. |
+| `TI-PRO-003-Diagrama.drawio` | Diagrama Draw.io. |
+| `proceso_adquisicion_ti_compras.zip` | Paquete de descarga. |
 
-## Cómo abrir el diagrama
+## TI-PRO-004 — Mantenimiento preventivo de equipos informáticos (cada 6 meses)
+
+| Archivo | Uso |
+| --- | --- |
+| `TI-PRO-004-Mantenimiento-Equipos-Informaticos.docx` | Procedimiento completo, mismo formato que TI-PRO-003. |
+| `TI-PRO-004-Pasos-a-seguir.md` | Resumen de pasos. |
+| `TI-PRO-004-Diagrama.drawio` | Diagrama Draw.io del ciclo semestral. |
+| `vista-previa-mantenimiento.html` | Vista rápida en el navegador. |
+| `proceso_mantenimiento_equipos.zip` | Paquete de descarga. |
+
+## Cómo abrir los diagramas
 
 1. Entre a [https://app.diagrams.net](https://app.diagrams.net).
 2. Elija **Open Existing Diagram**.
-3. Seleccione `TI-PRO-003-Diagrama.drawio`.
+3. Seleccione el archivo `.drawio` correspondiente.
 4. Para exportar: **File → Export as → PNG** o **PDF**.
 
-También puede instalar la aplicación de escritorio [draw.io](https://github.com/jgraph/drawio-desktop/releases) y abrir el archivo con doble clic.
-
-Para regenerar Word, Markdown y el diagrama:
+## Regenerar
 
 ```bash
 python3 documentacion/generar_documentos.py
+python3 documentacion/generar_mantenimiento.py
 ```

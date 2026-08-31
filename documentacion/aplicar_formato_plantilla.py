@@ -28,6 +28,7 @@ HERE = Path(__file__).resolve().parent
 TEMPLATE_CANDIDATES = [
     Path("/home/ubuntu/.cursor/projects/workspace/uploads/PROCESO_DE_ADQUISICI_N_DE_TECNOLOG_A_ENTRE_TI_Y_COMPRAS_26ab.docx"),
     HERE / "plantilla-DT360.docx",
+    HERE / "TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx",
 ]
 OUT_DOCX = HERE / "TI-PRO-003-Proceso-Adquisicion-Tecnologia.docx"
 
@@ -442,16 +443,20 @@ def find_template() -> Path:
     raise FileNotFoundError("No se encontró la plantilla Word DT360.")
 
 
-def build() -> Path:
+def render_from_template(paragraphs: list[ET.Element], out_path: Path) -> Path:
+    """Reescribe el cuerpo del Word conservando encabezado, pie y estilos de la plantilla."""
     template = find_template()
     plantilla_repo = HERE / "plantilla-DT360.docx"
-    if template.resolve() != plantilla_repo.resolve():
-        shutil.copy2(template, plantilla_repo)
+    if template.resolve() != plantilla_repo.resolve() and template.name != out_path.name:
+        try:
+            shutil.copy2(template, plantilla_repo)
+            source = plantilla_repo
+        except Exception:
+            source = template
+    else:
+        source = template if template.exists() else plantilla_repo
 
-    b = Builder()
-    paragraphs = content(b)
-
-    with zipfile.ZipFile(plantilla_repo) as zin:
+    with zipfile.ZipFile(source) as zin:
         doc_xml = zin.read("word/document.xml")
         others = {name: zin.read(name) for name in zin.namelist() if name != "word/document.xml"}
 
@@ -472,7 +477,6 @@ def build() -> Path:
     buf = io.BytesIO()
     ET.ElementTree(root).write(buf, encoding="utf-8", xml_declaration=True)
     new_doc = buf.getvalue()
-    # Word expects standalone declaration similar to original
     if new_doc.startswith(b"<?xml"):
         new_doc = new_doc.replace(
             b"<?xml version='1.0' encoding='utf-8'?>",
@@ -485,13 +489,18 @@ def build() -> Path:
             1,
         )
 
-    tmp = OUT_DOCX.with_suffix(".tmp.docx")
+    tmp = out_path.with_suffix(".tmp.docx")
     with zipfile.ZipFile(tmp, "w", compression=zipfile.ZIP_DEFLATED) as zout:
         for name, data in others.items():
             zout.writestr(name, data)
         zout.writestr("word/document.xml", new_doc)
-    tmp.replace(OUT_DOCX)
-    return OUT_DOCX
+    tmp.replace(out_path)
+    return out_path
+
+
+def build() -> Path:
+    b = Builder()
+    return render_from_template(content(b), OUT_DOCX)
 
 
 if __name__ == "__main__":

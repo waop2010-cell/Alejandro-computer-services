@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TI-PRO-004 — Mantenimiento preventivo semestral</title>
+  <style>
+    body { margin:0; font-family:"Segoe UI", Calibri, Arial, sans-serif; background:#f4f7fb; color:#1c2833; line-height:1.45; }
+    header { background:#1f4e79; color:#fff; padding:28px 32px; }
+    header p { margin:6px 0 0; opacity:.9; }
+    main { max-width:1100px; margin:0 auto; padding:24px; }
+    h2 { color:#1f4e79; border-bottom:2px solid #d6eaf8; padding-bottom:6px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .card { border-radius:12px; padding:16px 18px; border:2px solid; background:#fff; }
+    .interno { border-color:#1f4e79; background:#eaf2f8; }
+    .externo { border-color:#0e6655; background:#e8f8f5; }
+    ol.pasos { padding-left:20px; }
+    ol.pasos li { margin:8px 0; }
+    .note { background:#fcf3cf; border-left:4px solid #b7950b; padding:12px 14px; margin:16px 0; }
+    footer { text-align:center; color:#5d6d7e; padding:24px; font-size:13px; }
+    @media (max-width:800px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mantenimiento preventivo de equipos informáticos</h1>
+    <p>Código TI-PRO-004 · Versión 1.0 · Periodicidad: cada 6 meses</p>
+  </header>
+  <main>
+    <div class="note"><strong>Regla de derivación:</strong> si el preventivo determina que el equipo no tiene arreglo, se emite informe técnico y se continúa en el procedimiento de adquisición TI-PRO-003.</div>
+    <h2>Los dos canales</h2>
+    <div class="grid">
+      <article class="card interno">
+        <h3>Cliente interno</h3>
+        <p>Personal administrativo de Quito y Guayaquil. Cita en oficina o taller de TI.</p>
+      </article>
+      <article class="card externo">
+        <h3>Cliente externo</h3>
+        <p>Guardias y supervisores. Tablets y laptops de campo. Se coordina retiro, visita o equipo de respaldo.</p>
+      </article>
+    </div>
+    <h2>Pasos del ciclo semestral</h2>
+    <ol class="pasos">
+      <li>Plan desde inventario.</li>
+      <li>Ticket preventivo (lo abre TI).</li>
+      <li>Notificación (mínimo 5 días hábiles).</li>
+      <li>Recepción y respaldo.</li>
+      <li>Diagnóstico inicial.</li>
+      <li>Preventivo de hardware.</li>
+      <li>Preventivo de software y seguridad.</li>
+      <li>Pruebas funcionales.</li>
+      <li>Conforme, correctivo menor o derivación a compra.</li>
+      <li>Documentación e inventario.</li>
+      <li>Acta de mantenimiento y entrega.</li>
+      <li>Cierre, informe a Gerencia y próximo ciclo a +6 meses.</li>
+    </ol>
+  </main>
+  <footer>Documento interno · Área de Tecnología de la Información</footer>
+</body>
+</html>
