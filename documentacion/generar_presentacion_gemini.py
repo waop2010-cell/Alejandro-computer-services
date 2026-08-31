@@ -10,21 +10,28 @@ from pptx.enum.text import PP_ALIGN
 from pptx.util import Inches, Pt
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / "Manejo-y-Uso-de-Google-Gemini.pptx"
+OUT = HERE / "Gemini-sesion-contenido.pptx"
 
-NAVY = RGBColor(0x1F, 0x4E, 0x79)
-NAVY_DARK = RGBColor(0x15, 0x36, 0x54)
-BLUE = RGBColor(0x2E, 0x86, 0xAB)
-TEAL = RGBColor(0x14, 0x8F, 0x77)
-GOLD = RGBColor(0xB7, 0x95, 0x0B)
+# Gama Aditec: azul corporativo + rojo del logo
+NAVY = RGBColor(0x0A, 0x52, 0x9C)
+NAVY_DARK = RGBColor(0x09, 0x2A, 0x48)
+BLUE = RGBColor(0x0A, 0x52, 0x9C)
+TEAL = RGBColor(0x0A, 0x52, 0x9C)  # acentos de texto (misma gama)
+RED = RGBColor(0xDB, 0x26, 0x1D)
+GOLD = RGBColor(0x0A, 0x52, 0x9C)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 INK = RGBColor(0x1C, 0x28, 0x33)
 MUTED = RGBColor(0x5D, 0x6D, 0x7E)
-CARD = RGBColor(0xEA, 0xF2, 0xF8)
-CARD2 = RGBColor(0xE8, 0xF8, 0xF5)
-CARD3 = RGBColor(0xFC, 0xF3, 0xCF)
-RED_SOFT = RGBColor(0xF5, 0xB7, 0xB1)
-LINE = RGBColor(0xD4, 0xE6, 0xF1)
+CARD = RGBColor(0xE8, 0xF1, 0xF8)
+CARD2 = RGBColor(0xF2, 0xF2, 0xF0)
+CARD3 = RGBColor(0xEE, 0xEC, 0xE1)
+RED_SOFT = RGBColor(0xF8, 0xD4, 0xD2)
+LINE = RGBColor(0xD6, 0xE3, 0xF0)
+KICKER = RGBColor(0x8F, 0xB8, 0xDC)
+SUBTITLE = RGBColor(0xD6, 0xE3, 0xF0)
+FOOT_MUTED = RGBColor(0xAE, 0xB6, 0xBF)
+WARN = RGBColor(0xDB, 0x26, 0x1D)
+WARN_BG = RGBColor(0xF8, 0xD4, 0xD2)
 
 
 def set_run(run, size=18, bold=False, color=INK, font="Calibri"):
@@ -102,9 +109,9 @@ def footer(slide, page, total=11):
 
 def header_bar(slide, kicker, title):
     rect(slide, Inches(0), Inches(0), Inches(13.333), Inches(1.15), NAVY)
-    rect(slide, Inches(0), Inches(1.15), Inches(13.333), Inches(0.08), TEAL)
+    rect(slide, Inches(0), Inches(1.15), Inches(13.333), Inches(0.08), RED)
     textbox(slide, Inches(0.5), Inches(0.12), Inches(12), Inches(0.3),
-            kicker.upper(), size=12, bold=True, color=RGBColor(0xA3, 0xE4, 0xD7))
+            kicker.upper(), size=12, bold=True, color=KICKER)
     textbox(slide, Inches(0.5), Inches(0.42), Inches(12.2), Inches(0.6),
             title, size=26, bold=True, color=WHITE)
 
@@ -136,18 +143,18 @@ def build():
     # 1 Cover
     s = prs.slides.add_slide(blank)
     rect(s, Inches(0), Inches(0), Inches(13.333), Inches(7.5), NAVY_DARK)
-    rect(s, Inches(0), Inches(0), Inches(0.18), Inches(7.5), TEAL)
+    rect(s, Inches(0), Inches(0), Inches(0.18), Inches(7.5), RED)
     textbox(s, Inches(0.7), Inches(1.7), Inches(11.5), Inches(0.4),
-            "GUÍA PRÁCTICA  ·  15 MINUTOS", size=14, bold=True, color=RGBColor(0xA3, 0xE4, 0xD7))
+            "GUÍA PRÁCTICA  ·  15 MINUTOS", size=14, bold=True, color=KICKER)
     textbox(s, Inches(0.7), Inches(2.15), Inches(12), Inches(1.6),
             "Manejo y uso de\nGoogle Gemini",
             size=40, bold=True, color=WHITE)
     textbox(s, Inches(0.7), Inches(4.15), Inches(11.5), Inches(0.9),
             "Cómo entrar, cómo preguntar y cómo aprovechar la herramienta\npara el trabajo diario — con criterio y sin perder el control.",
-            size=18, color=RGBColor(0xD6, 0xEA, 0xF8))
+            size=18, color=SUBTITLE)
     textbox(s, Inches(0.7), Inches(6.4), Inches(11), Inches(0.4),
             "Área de Tecnología de la Información  ·  gemini.google.com",
-            size=14, color=RGBColor(0xAE, 0xB6, 0xBF))
+            size=14, color=FOOT_MUTED)
     notes(s,
           "Saludo (30 s). Dejar claro desde el inicio: hoy no es una charla teórica sobre inteligencia artificial. "
           "Es una guía de manejo de la herramienta Google Gemini: dónde se abre, qué botones usar, cómo pedir bien y qué no subir. "
@@ -189,7 +196,7 @@ def build():
     card(s, Inches(8.85), Inches(1.45), Inches(4.05), Inches(5.25),
          "3. Antes de escribir",
          "Revise que está en la cuenta correcta.\n\nUn chat nuevo = un tema nuevo. Así no mezcla un procedimiento con un correo personal.\n\nSi la empresa tiene Gemini en Workspace, úselo ahí para Gmail, Docs y Drive.",
-         CARD3, RGBColor(0x7D, 0x66, 0x08))
+         CARD3, NAVY)
     footer(s, 3, total)
     notes(s,
           "2 min. Si puede, proyecte gemini.google.com 10 segundos y señale: historial, caja de texto, clip de archivos. "
@@ -219,8 +226,8 @@ def build():
     # 5 Ejemplo de instrucción
     s = prs.slides.add_slide(blank)
     header_bar(s, "Ejemplo para copiar", "Una instrucción débil vs una que sí se puede usar")
-    round_rect(s, Inches(0.45), Inches(1.45), Inches(6.05), Inches(5.25), RGBColor(0xFD, 0xED, 0xEC))
-    textbox(s, Inches(0.7), Inches(1.65), Inches(5.6), Inches(0.45), "Poco útil", size=20, bold=True, color=RGBColor(0x92, 0x2B, 0x21))
+    round_rect(s, Inches(0.45), Inches(1.45), Inches(6.05), Inches(5.25), WARN_BG)
+    textbox(s, Inches(0.7), Inches(1.65), Inches(5.6), Inches(0.45), "Poco útil", size=20, bold=True, color=WARN)
     box = s.shapes.add_textbox(Inches(0.7), Inches(2.25), Inches(5.55), Inches(4.1))
     tf = box.text_frame
     tf.word_wrap = True
@@ -273,7 +280,7 @@ def build():
     card(s, Inches(8.85), Inches(4.0), Inches(4.05), Inches(2.7),
          "Hoja o listado",
          "«Encuentra duplicados, fechas vencidas o equipos sin usuario.» Revise siempre las cifras.",
-         CARD3, RGBColor(0x7D, 0x66, 0x08))
+         CARD3, NAVY)
     footer(s, 6, total)
     notes(s,
           "2 min. Si hay demo: adjunte un PDF inofensivo (un procedimiento interno no confidencial o un texto de ejemplo) y pida 8 viñetas. "
@@ -360,8 +367,8 @@ def build():
     ]
     y = 1.45
     for title, body in rules:
-        round_rect(s, Inches(0.5), Inches(y), Inches(12.3), Inches(1.2), RGBColor(0xFD, 0xED, 0xEC) if title == "No suba" else CARD)
-        textbox(s, Inches(0.75), Inches(y + 0.32), Inches(2.6), Inches(0.55), title, size=18, bold=True, color=RGBColor(0x92, 0x2B, 0x21) if title == "No suba" else NAVY)
+        round_rect(s, Inches(0.5), Inches(y), Inches(12.3), Inches(1.2), WARN_BG if title == "No suba" else CARD)
+        textbox(s, Inches(0.75), Inches(y + 0.32), Inches(2.6), Inches(0.55), title, size=18, bold=True, color=WARN if title == "No suba" else NAVY)
         textbox(s, Inches(3.5), Inches(y + 0.28), Inches(9.0), Inches(0.7), body, size=16, color=INK)
         y += 1.3
     footer(s, 10, total)
@@ -372,18 +379,18 @@ def build():
     # 11 Cierre
     s = prs.slides.add_slide(blank)
     rect(s, Inches(0), Inches(0), Inches(13.333), Inches(7.5), NAVY_DARK)
-    rect(s, Inches(0), Inches(0), Inches(0.18), Inches(7.5), TEAL)
+    rect(s, Inches(0), Inches(0), Inches(0.18), Inches(7.5), RED)
     textbox(s, Inches(0.7), Inches(1.5), Inches(12), Inches(0.4),
-            "PARA LLEVARSE HOY", size=14, bold=True, color=RGBColor(0xA3, 0xE4, 0xD7))
+            "PARA LLEVARSE HOY", size=14, bold=True, color=KICKER)
     textbox(s, Inches(0.7), Inches(2.0), Inches(12), Inches(1.8),
             "Entre, adjunte, pida con claridad,\nrevise y envíe usted.",
             size=32, bold=True, color=WHITE)
     textbox(s, Inches(0.7), Inches(4.2), Inches(12), Inches(1.3),
             "gemini.google.com  ·  Un chat por tema  ·  «No inventes» en la instrucción.\nPreguntas.",
-            size=20, color=RGBColor(0xD6, 0xEA, 0xF8))
+            size=20, color=SUBTITLE)
     textbox(s, Inches(0.7), Inches(6.4), Inches(12), Inches(0.4),
             "Área de Tecnología de la Información",
-            size=14, color=RGBColor(0xAE, 0xB6, 0xBF))
+            size=14, color=FOOT_MUTED)
     notes(s,
           "Cierre 40 s. Repetir la secuencia. Abrir preguntas. Si hay silencio: «¿quién quiere que recorramos juntos un ejemplo de correo o de resumen de PDF?»")
 

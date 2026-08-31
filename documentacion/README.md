@@ -32,7 +32,7 @@ Documentos internos del Área de TI, en plantilla institucional (encabezado, pie
 
 | Archivo | Uso |
 | --- | --- |
-| `Manejo-y-Uso-de-Google-Gemini.pptx` | Guía práctica: cómo entrar, preguntar, adjuntar archivos y usar las funciones. Notas del orador en cada diapositiva. |
+| `Manejo-y-Uso-de-Google-Gemini.pptx` | Presentación completa (Aditec + sesión Gemini), gama corporativa azul `#0A529C` y rojo `#DB261D`. |
 | `Guion-Gemini-15-minutos.md` | Tiempos sugeridos y respuestas a preguntas frecuentes. |
 | `presentacion_gemini_analista.zip` | Paquete de descarga. |
 
